@@ -1,10 +1,17 @@
-//Diego Aquino Montero
+//Diego Aquino Montero, Turma M1
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
 #include <stdbool.h>
+
+/*
+====================
+GetLetters
+Will separate letters from numbers in a given array named 'licensePlate', then the letters are all converted into their respective lower case versions.
+====================
+*/
 
 char* GetLetters(const char* licensePlate){
     int j = 0;
@@ -18,6 +25,15 @@ char* GetLetters(const char* licensePlate){
     filtered[j]='\0';
     return filtered;
 }
+
+/*
+====================
+CheckForWords
+This function receives two strings named 'words' and 'freePlate'. It will then count how many times a specific letter shows up in freePlate using 'counter'.
+If 'words' has a letter which also appears in freePlate then the counter will decrease for that specific letter.
+If the counter for all letters equals zero, then the function returns true.
+====================
+*/
 
 bool CheckForWords(char* words, char* freePlate) {
     const char* alphabet = "abcdefghijklmnopqrstuvwxyz";
