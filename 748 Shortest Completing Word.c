@@ -6,7 +6,7 @@
 #include <string.h>
 #include <stdbool.h>
 
-char* getletters(const char* licensePlate){
+char* GetLetters(const char* licensePlate){
     int j = 0;
     char* filtered = (char*)malloc(strlen(licensePlate) + 1);
     for (int i = 0; licensePlate[i]  != '\0'; i++) {
@@ -19,7 +19,7 @@ char* getletters(const char* licensePlate){
     return filtered;
 }
 
-bool checkForWords(char* words, char* freePlate) {
+bool CheckForWords(char* words, char* freePlate) {
     const char* alphabet = "abcdefghijklmnopqrstuvwxyz";
     int counter[26] = {0};
     int wordSize = strlen(words);
@@ -51,10 +51,10 @@ char * shortestCompletingWord(char * licensePlate, char ** words, int wordsSize)
     char* freePlate;
     char* shortest = NULL;
 
-    freePlate = getletters(licensePlate);
+    freePlate = GetLetters(licensePlate);
 
     for (int i = 0; i < wordsSize; i++) {
-        if (checkForWords(words[i], freePlate) == true) {
+        if (CheckForWords(words[i], freePlate) == true) {
             if (shortest == NULL || strlen(words[i]) < strlen(shortest)){
                 shortest = words[i];
             }
