@@ -25,7 +25,7 @@ Como funciona meu código:
 
 1 - Dentro do 'char * shortestCompletingWord(char * licensePlate, char ** words, int wordsSize)' a função 'GetLetters' recebe a 'licensePlate' e o resultado é recebido por 'freePlate', uma versão composta apenas por letras do 'licensePlate'; as letras maiúsculas são convertidas para minúsculas usando a expressão 'tolower'.
 
-2 - Um 'for' se repetirá para cada palavra em 'words[]', dentro há duas expressões 'if'. O primeiro 'if' avalia se a string de 'words[]' atual possuí a quantidade de letras mínima para ser aceito em relação a 'frePlate', esta avaliação é feita através da função 'CheckForWords'.
+2 - Um 'for' se repetirá para cada palavra em 'words[]', dentro há duas expressões 'if'. O primeiro 'if' avalia se a string de 'words[]' atual possuí a quantidade de letras mínima para ser aceito em relação a 'freePlate', esta avaliação é feita através da função 'CheckForWords'.
 
 3 - Dentro de 'CheckForWords' um contador irá somar o valor de +1 para pontuar a aparição de uma letra específica em 'freePlate', este contador é 'counter[26]', o valor de 26 se refere às letras do alfabeto. Por exemplo, caso a letra 'a' se repita duas vezes em 'freePlate' então o counter[0], correspondente a 'a', irá somar +1 duas vezes.
 
