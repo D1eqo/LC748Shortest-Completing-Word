@@ -2,13 +2,13 @@
 
 Diego Aquino Montero, turma M1
 
-748 Shortest Completing Word.c é o código completo com o main().
+1 - 748_Shortest_Completing_Word.c é o código completo com o main().
 
-748lcFeitoEmAula.c é o que eu consegui fazer no período de aula no dia 7 de Julho.
+2 - 748lcFeitoEmAula.c é o que eu consegui fazer no período de aula no dia 7 de Julho.
 
-codigo do leet 748 é a versão aceita pelo LeetCode, sem main() e libraries.
+3 - codigo do leet 748 é a versão aceita pelo LeetCode, sem main() e libraries.
 
-littletest2.c é uma versão simplificada do desafio com a estrutura do main improvisada para funcionar com o resto do código.
+4 - littletest2.c é uma versão simplificada do desafio com a estrutura do main improvisada para funcionar com o resto do código.
 
 
 Casos testados:
