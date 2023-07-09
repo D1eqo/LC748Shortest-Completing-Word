@@ -31,7 +31,7 @@ char* GetLetters(const char* licensePlate){
 CheckForWords
 This function receives two strings named 'words' and 'freePlate'. It will then count how many times a specific letter shows up in freePlate using 'counter'.
 If 'words' has a letter which also appears in freePlate then the counter will decrease for that specific letter.
-If the counter for all letters equals zero, then the function returns true.
+If the counter for all letters equals to zero, then the function returns true.
 ====================
 */
 
