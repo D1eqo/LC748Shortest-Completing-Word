@@ -15,7 +15,7 @@ Will separate letters from numbers in a given array named 'licensePlate', then t
 
 char* GetLetters(const char* licensePlate){
     int j = 0;
-    char* filtered;
+    char* filtered = (char*)malloc(strlen(licensePlate) + 1);
     for (int i = 0; licensePlate[i]  != '\0'; i++) {
         if (isalpha(licensePlate[i])) {
             filtered[j] = tolower(licensePlate[i]);
@@ -76,6 +76,7 @@ char * shortestCompletingWord(char * licensePlate, char ** words, int wordsSize)
             }
         }
     }
+   free(freePlate);
    return shortest;
 }
 
