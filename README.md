@@ -33,7 +33,7 @@ Como funciona meu código:
 
 5 - Se o valor do 'counter[]' para todas as letras for 0, significa que a palavra 'words' tem letras suficientes para satisfazer a função e retornar true. Caso contrário retorna-se false.
 
-6 - Se a função 'CheckForWords' retornou true a palavra 'words[]' usada na função será testada para ver se é menor ou maior que a string em 'shortest', originalmente com valor NULL, se sim a words[] será passada para shortest.
+6 - Se a função 'CheckForWords' retornou true a palavra 'words[]' usada na função será testada para ver se é menor ou maior que a string em 'shortest', originalmente com valor NULL, se sim a words[] será passada para shortest. Para 'shortest=NULL' 'words[]' sempre será recebido por 'shortest'.
 
 7 - Após todas as palavras em words[] serem testadas o conteúdo de 'shortest' deve ser igual à palavra que satisfaz o problema.
 
